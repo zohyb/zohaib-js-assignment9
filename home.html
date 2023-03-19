@@ -1,0 +1,93 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    
+    
+    <!--     Bootstrap CSS     -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    
+    <!--     Font Awesome     -->
+    <script src="https://kit.fontawesome.com/b00720c74d.js" crossorigin="anonymous"></script>
+    
+    
+    <!--  G-Font Oswald  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+    
+    
+    <!--  Toastify  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+    
+    <!--  Animate CSS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    
+    <!--  Custom CSS  -->
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body style="background-image: url(Assets/bghome1.jpg); background-size: cover;" oncontextmenu="return false">
+<!---------------------------------------------------------------------------------------------------------------------->
+        
+         <!--     main page     -->
+   
+<div class="" id="mainPage">
+      
+    <!--     NavBar     -->
+      
+<!--       <nav class="navbar navbar-expand-lg glassBg" style="border-radius: 0px;">-->
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+        <p class="text-white fs-3 mt-4 animate__animated animate__fadeInUp" style="font-family: 'Playfair Display', serif;">Welcome <span id="uname" class="username"></span> !</p>
+        </div>
+        <hr class="container text-light">
+        
+<!--        </nav>-->
+        
+    <!--     Body     -->
+    
+    <div class="container " style="min-height: 80vh;">
+                <div class="row d-flex justify-content-center mt-5">
+                    <div class="col-8">
+                    <h4 class="text-center text-light">Add Your City In List</h4>
+                       <div class="border border-dark rounded py-4 glassBg" style="min-height: 140px;">
+                           <div class="container input-group">
+                           <div class="input-group mb-3">
+                              <input type="text" class="form-control border border-0 text-white" id="cityInput" placeholder="Enter City Name" aria-label="Recipient's username" aria-describedby="basic-addon2" style="background-color: #17171F;" >
+                            </div>
+                            <div class="container d-flex justify-content-evenly">
+                              <button class="btn col-3 text-light" id="btn1" type="button" style="background-color: #1F1F29;">Print All Cities</button>
+                              <button class="btn col-3 text-light" id="btn2" type="button" style="background-color: #1F1F29;">Add Your City</button>
+                            </div>
+                            </div>
+                       </div>
+                    </div>  
+                </div>
+                <div class="row d-flex justify-content-center my-5">
+                    <div class="col-8">
+                        <h4 class="text-center text-light">Cities List</h4>
+                        <div class="d-flex justify-content-center align-items-center border border-dark rounded py-4 glassBg" style="min-height: 132px;">
+                           <div>
+                            <span id="result" class="fs-5 text-center text-light"></span>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+        
+<!---------------------------------------------------------------------------------------------------------------------->
+    <!--  Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <!--  Toastify JS  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    
+    <!--  Custom JS  -->
+    <script src="home.js"></script>
+</body>
+</html>

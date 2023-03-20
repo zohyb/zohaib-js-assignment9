@@ -5,40 +5,12 @@ var cities = ["Faisalabad", "Lahore", "Karachi", "Islamabad", "Burewala", "Sheik
 
 
 
-
-
-//-----------------------------------------------------------------------------------------------------------
-
-
-
-
-function ctrlShiftKey(e, keyCode) {
-  return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
-}
-
-document.onkeydown = (e) => {
-  // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
-  if (
-    event.keyCode === 123 ||
-    ctrlShiftKey(e, 'I') ||
-    ctrlShiftKey(e, 'J') ||
-    ctrlShiftKey(e, 'C') ||
-    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
-  )
-    return false;
-};
-
-
-
-
 //-----------------------------------------------------------------------------------------------------------
 
 
 let fullName = sessionStorage.getItem("fullName");
-console.log(fullName);
+console.log("Your Name Is =>", fullName);
 document.getElementById("uname").innerHTML = fullName;
-
-//-----------------------------------------------------------------------------------------------------------
 
 
 //Print All Cities--------------------------------------------------------------------------------------------------------------
@@ -46,9 +18,10 @@ document.getElementById("uname").innerHTML = fullName;
 
 btn1.onclick = function(){
     
-    result.innerHTML = " "
+    result.innerHTML = ""
     for(let index = 0 , sr = 1 ; index < cities.length ; index++ , sr++){
-        result.innerHTML += sr + ")" + cities[index] + "<br>";
+        result.innerHTML += sr + ") " + cities[index] + "<br>";
+        console.log(sr, cities[index] )
     }
     
 }
@@ -110,6 +83,3 @@ btn2.onclick = function(){
     }
     
 }
-
-
-//--------------------------------------------------------------------------------------------------------------

@@ -2,25 +2,8 @@ function ctrlShiftKey(e, keyCode) {
   return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
 }
 
-document.onkeydown = (e) => {
-  // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
-  if (
-    event.keyCode === 123 ||
-    ctrlShiftKey(e, 'I') ||
-    ctrlShiftKey(e, 'J') ||
-    ctrlShiftKey(e, 'C') ||
-    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
-  )
-    return false;
-}; 
-
 
 //--------------------------------------------------------------------------------------------------------------
-
-
-
-
-
 
 
 
@@ -43,15 +26,7 @@ forgetPass.onclick = function(){
 }
 
 
-
-
-
-
 //--------------------------------------------------------------------------------------------------------------
-
-
-
-
 
 
 
@@ -59,12 +34,9 @@ function login(){
     var email = document.getElementById("email").value;
     var password =+ document.getElementById("password").value;
     email = email.replace(/\./g,'')
-    
     if(email == "admin@usercom"){
         if(password == "123456"){   
             location.href = "home.html";
-//            document.getElementById("loginPage").className = "d-none";
-//            document.getElementById("mainPage").className = ""
         }
         else{
             Toastify({
@@ -120,12 +92,3 @@ function login(){
     }
     
 }
-
-
-
-
-//----------------------------------------------------------------------------------------------------------
-
-
-
-
